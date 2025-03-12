@@ -1,0 +1,25 @@
+Technical Interview Question: Giphy Search Application
+Objective:
+Build a Giphy Search Application using a React frontend (FE) and a Node.js backend (BE). The backend will call the Giphy /search API, process the results, and return structured data to the frontend.
+
+Requirements:
+Backend (Node.js/Express)
+Call the Giphy /search API.
+Extract and group results by year using the import_datetime field.
+Return only the images.fixed_width.url field for each GIF.
+Frontend (React)	
+Send a search request to the backend.
+Display the results in one grid layout with three columns.
+On desktop-sized screens, display on a three-column grid layout
+On mobile-sized screens (max screen size: 480px), display on a one-column grid layout
+
+API Details:
+Giphy API Key: LEls10pQ1lqL1lxLehiPoD0P61SpGcQK
+
+Expected Output Format (Example)
+{
+    "2017": ["url1", "url2", "url3"],
+    "2019": ["url4", "url5"],
+    "2018": ["url6", "url7", "url8"]
+}
+
